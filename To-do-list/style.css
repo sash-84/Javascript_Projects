@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background-color: #e3d5ca;
+}
+
+.to-do {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    padding:  40px 30px 70px;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+#search {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+.add {
+    background-color: #f4a261;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type: none;
+    user-select: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('assets/unchecked.png');
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify Clone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="songList">
+            <h1>Best of Best SHREYA GHOSHAL</h1>
+
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Kaise Mujhe (From "Gajini")</span>
+                    <span class="songlistplay">
+                    <span class="timestamp">03:50 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Ghoomar (From "Padmaavat")</span>
+                    <span class="songlistplay">
+                    <span class="timestamp">02:33 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Kanga Re (From "Paheli")</span>
+                    <span class="songlistplay">
+                    <span class="timestamp">04:33 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Hangover (From "Kick")</span>
+                    <span class="songlistplay">
+                    <span class="timestamp">04:27 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Rozana (From "Naam Shabana")</span>
+                    <span class="songlistplay">
+                    <span class="timestamp">03:28 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+        
+        <div class="icons">
+            <i class="fa-solid fa-step-backward"></i>
+            <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-step-forward"></i>
+        </div>
+        
+        <div class="songInfo">
+            <img src="play.gif" width="42px" alt="" id="gif"><span id="masterSongName"> Kaise Mujhe (From "Gajini")</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

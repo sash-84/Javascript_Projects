@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ebfffc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    /*When these two properties are used together, they ensure that:
+     On smaller screens or within smaller containers, the element will be 90% of the container's width, providing a responsive and fluid layout. On larger screens or within larger containers, once 90% of the container's width exceeds 420 pixels, the element will not grow any wider than 420 pixels, maintaining a more controlled and readable size.*/
+    /* background-color: #fff; */
+    background: linear-gradient(135deg,#ade8f4,#90e0ef,#48cae4,#00b4d8,#0096c7,#0077b6);
+    color: #fff;
+    /* margin: 100px auto 0; */
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    border-radius: 30px;
+    padding: 10px 25px;
+    height: 60px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    font-size: 19px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.weather h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather, .error {
+    display: none;
+}
+
+.error {
+    margin-top: 40px;
+    background-color: #ebfffc;
+    width: 100%;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 50px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="overlay">
+            <div class="container">
+                <div class="parameters">
+                    <input type="text" name="" id="password" placeholder="Enter Password">
+                    <label for=""></label>
+                </div>
+                <div class="parameters">
+                    <label for="">Password Length</label>
+                    <div id="length"></div>
+                </div>
+                <div class="parameters">
+                    <label for="">Containes Uppercase</label>
+                    <input type="checkbox" name="" id="upper">
+                </div>
+                <div class="parameters">
+                    <label for="">Containes Lowercase</label>
+                    <input type="checkbox" name="" id="lower">
+                </div>
+                <div class="parameters">
+                    <label for="">Containes Digits</label>
+                    <input type="checkbox" name="" id="digits">
+                </div>
+                <div class="parameters">
+                    <label for="">Containes Symbols</label>
+                    <input type="checkbox" name="" id="symbols">
+                </div>
+                <input type="button" value="Generate" id="generate" disabled>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

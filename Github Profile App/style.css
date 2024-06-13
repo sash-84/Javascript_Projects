@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e3d5ca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100%; */
+}
+
+#search {
+    width: 550px;
+    padding: 15px 15px 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 5px solid #e3d5ca;
+    margin-bottom: 20px;
+}
+
+#search:focus {
+    outline: none;
+    border: 5px solid #9a8c98;
+}
+
+#search:hover {
+    border: 5px solid #9a8c98;
+}
+
+#search::placeholder {
+    font-size: 20px;
+    color: #ccc;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #9a8c98;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.card .image {
+    height: 100%;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.image img {
+    height: 80%;
+    width: 75%;
+    border-radius: 50%;
+    border: 5px solid #f2e9e4;
+}
+
+.user-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.info {
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.info li {
+    font-size: 17px;
+}
+
+#repos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.repo_border {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #4a4e69;
+    transition: 1.03s;
+}
+
+#repos .repo{
+    text-decoration: none;
+    color : #fff;
+    font-size: 0.89rem;
+}
+
+#repos .repo_border:hover {
+    background-color: #6a6a6efd;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 10px;
+
+}
+
+.error {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.error img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(253, 223, 183);
+    margin-bottom: 20px;
+}
+
+.error span {
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+}
